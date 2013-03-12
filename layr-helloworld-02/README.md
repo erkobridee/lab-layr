@@ -3,6 +3,11 @@ Layr - Hello World 02 - Advanced
 
 Criando um Hello World um pouco mais incrementado, mais próximo da estrutura de código do projeto que foi utilizado como modelo de estrutura para este projeto.
 
+Este projeto foi baseado no item: [Definindo a raíz do aplicativo](https://github.com/miere/Layr/blob/master/README.md#definindo-a-raz-do-aplicativo) do [README.md](https://github.com/miere/Layr/blob/master/README.md) do [Layr](https://github.com/miere/Layr)
+
+Onde conforme a convesão utilizada no Layr, este procura uma classe anotada com `@WebResource("/home/")` para utilizar como página inicial da aplicação. Neste projeto foi utilizado também o conceito de tema de página.
+
+
 Utilizado neste projeto
 -----------------------
 

@@ -3,6 +3,11 @@ Layr - Hello World 01 - Simple
 
 Como tudo que é novo e vou utilizar pela primeira vez, vamos ao clássico Hello World, ultra simples, para ver este framework funcionando no Web Browser.
 
+Este projeto foi baseado no item: [Definindo a raíz do aplicativo](https://github.com/miere/Layr/blob/master/README.md#definindo-a-raz-do-aplicativo) do [README.md](https://github.com/miere/Layr/blob/master/README.md) do [Layr](https://github.com/miere/Layr)
+
+Onde conforme a convesão utilizada no Layr, este procura o `home.xhtml` para utilizar como página inicial da aplicação.
+
+
 Utilizado neste projeto
 -----------------------
 
