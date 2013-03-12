@@ -11,7 +11,8 @@ faces-config.xml
 
 .project
 .classpath
+.settings/
+
 target/
 output/
 db/
-.settings/
