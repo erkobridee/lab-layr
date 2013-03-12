@@ -10,6 +10,7 @@ Utilizado neste projeto
 
 	[Layr / layr-jee-natural-routing-sample](https://github.com/miere/Layr/tree/master/layr-jee-natural-routing-sample)
 
+  **Obs.:** A estrutura desse projeto utiliza conceitos de Clean Code e Behavior Driven Development.
 
 * Ambiente de desenvolvimento
   * [Java](http://www.java.com/) 1.6+
