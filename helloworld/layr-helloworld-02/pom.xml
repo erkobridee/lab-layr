@@ -6,7 +6,7 @@
 	<name>Layr - Hello World - 02 Advanced</name>
 	<groupId>com.erkobridee.layr.helloworld.advanced</groupId>
 	<artifactId>layr-helloworld-02</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<url>http://maven.apache.org</url>
 
