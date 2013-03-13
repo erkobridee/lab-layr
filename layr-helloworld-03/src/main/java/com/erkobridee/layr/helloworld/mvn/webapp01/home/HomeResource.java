@@ -1,4 +1,4 @@
-package com.erkobridee.layr.helloworld.mvn.webapp01.hello;
+package com.erkobridee.layr.helloworld.mvn.webapp01.home;
 
 import javax.ejb.EJB;
 
