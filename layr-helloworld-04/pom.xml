@@ -1,0 +1,109 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <name>layr-helloworld-04 Maven Webapp</name>
+  <groupId>com.erkobridee.layr.helloworld.mvn.webapp02</groupId>
+  <artifactId>layr-helloworld-04</artifactId>
+  <packaging>war</packaging>
+  <version>1.0</version>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <encoding>UTF-8</encoding>
+
+    <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+    <maven-war-plugin.version>2.2</maven-war-plugin.version>
+
+    <java.version>1.6</java.version>
+
+    <javax.javaee-api.version>6.0</javax.javaee-api.version>
+    <layr.version>2.0</layr.version>
+
+    <junit.version>4.10</junit.version>
+  </properties> 
+
+  <dependencies>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>${javax.javaee-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- @begin: Layr -->
+    <dependency>
+      <groupId>org.layr</groupId>
+      <artifactId>layr-jee-natural-routing-plugin</artifactId>
+      <version>${layr.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.layr</groupId>
+      <artifactId>layr-jee-business-routing-plugin</artifactId>
+      <version>${layr.version}</version>
+    </dependency>
+    <!-- @end: Layr -->
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit-dep</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <finalName>${project.artifactId}</finalName>
+
+    <plugins>
+
+      <!-- @begin: compile -->
+      <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <optimize>true</optimize>
+          <debug>false</debug>
+        </configuration>
+      </plugin>
+      <!-- @end: compile -->
+
+      <!-- @begin: war config -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>${maven-war-plugin.version}</version>
+        <configuration>
+          
+          <webResources>
+            
+            <resource>
+              <directory>src/frontend/view</directory>
+              <includes>
+                <include>**/*.*</include>
+              </includes>
+            </resource>
+
+            <resource>
+              <directory>src/frontend/resources</directory>
+              <includes>
+                <include>**/*.*</include>
+              </includes>
+            </resource>
+
+          </webResources>
+
+        </configuration>
+      </plugin>
+      <!-- @end: war config -->
+
+    </plugins>
+
+  </build>
+
+</project>
