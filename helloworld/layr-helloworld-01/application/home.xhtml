@@ -23,7 +23,9 @@
 			<br /><br />
 
 			<!-- componentes -->
-			<div xmlns:ui="urn:dependencies:components">
+			<div 
+				xmlns:comp="urn:comp"
+				xmlns:ui="urn:dependencies:components">
 			
 				<form class="form-inline">
 					<ui:SearchField id="searchField" />
@@ -46,15 +48,24 @@
 					</ui:FormItem>
 				</form>
 
+				<br/><br/>
+
+				<comp:IconButton id="iconButtonAppLocal" icon="flag" label="Local App Button" />
+
+				<br/><br />
+
+				<comp:AppComponent />
+
 			</div>
 
 		</div>
 	</div>
 
-	<!-- JS -->
-	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
-	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
-	<script src="dependencies/commons.js"></script>
+
+<!-- JS -->
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+<script src="dependencies/commons.js"></script>
 
 </body>
 
