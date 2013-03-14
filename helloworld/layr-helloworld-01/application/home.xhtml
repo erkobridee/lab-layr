@@ -1,27 +1,61 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tpl="urn:layr:template" lang="pt-br">
-	<head>
-		<title>Layr Hello World - Simple</title>
-		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=100" />
-		
-		<!-- CSS -->
-    	<link rel="stylesheet" type="text/css" href="dependencies/bootstrap/css/bootstrap.min.css"></link>		
-		<link rel="stylesheet" type="text/css" href="dependencies/theme.css"></link>
-	</head>
+<html 
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:tpl="urn:layr:template"
+	lang="pt-br">
 
-	<body>
-		<div id="wrap">
-            <div class="container body-content">
-               	Hello World - Simple
+<head>
+	<title>Layr Hello World - Simple</title>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=100" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="dependencies/bootstrap/css/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="dependencies/theme.css"></link>
+</head>
+
+<body>
+
+	<div id="wrap">
+		<div class="container body-content">
+			Hello World - Simple
+
+			<br /><br />
+
+			<!-- componentes -->
+			<div xmlns:ui="urn:dependencies:components">
+			
+				<form class="form-inline">
+					<ui:SearchField id="searchField" />
+					<![CDATA[&nbsp;&nbsp;&nbsp;]]>
+					<ui:IconPrimaryButton id="addUser" icon="plus-sign" />
+				</form>
+
+				<br/>
+
+				<ui:IconButton id="iconButtonTest" icon="ok" label="Test Button" />
+			
+				<br/><br/>
+
+				<form class="form-horizontal">
+					<ui:FormItem label="Form Item 1">
+						<ui:TextInput id="textInput1" name="Text Input 1"/>
+					</ui:FormItem>
+					<ui:FormItem label="Form Item 2">
+						<ui:RadioItem id="radioItem2"> Radio Item 2 </ui:RadioItem>
+					</ui:FormItem>
+				</form>
+
 			</div>
-		</div>
 
-		<!-- JS -->		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js" ></script>
-		<script src="dependencies/bootstrap/js/bootstrap.min.js" ></script>
-		<script src="dependencies/commons.js" ></script>
-		
-	</body>
+		</div>
+	</div>
+
+	<!-- JS -->
+	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dependencies/commons.js"></script>
+
+</body>
 
 </html>
