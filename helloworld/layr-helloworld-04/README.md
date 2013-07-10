@@ -1,24 +1,25 @@
-Layr - Hello World 04 - Maven Webapp + War Plugin
-====================================
+# Layr - Hello World 04 - Maven Webapp + War Plugin
 
 Este Hello World foi baseado na estrutura de webapp do Maven, reaproveitando os fontes do **Layr - Hello World 03 - Maven Webapp**, porém reorganizando os fontes referente ao frontend para um novo diretório.
 
 
-Utilizado neste projeto
------------------------
+## Utilizado neste projeto
 
 * Archetype do Maven que gerou a estrutura inicial do projeto
 
-<pre><code>mvn archetype:generate \
+```
+mvn archetype:generate \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DarchetypeArtifactId=maven-archetype-webapp \
   -Dversion=1.0 \
   -DgroupId=com.erkobridee.layr.helloworld.mvn.webapp02 \
-  -DartifactId=layr-helloworld-04</code></pre>
+  -DartifactId=layr-helloworld-04
+```
 
 * Estrutura de diretórios do projeto depois de organizado
 
-<pre><code>layr-helloworl-04/
+```
+layr-helloworl-04/
   src/
     frontend/
       resources/
@@ -40,7 +41,8 @@ Utilizado neste projeto
       resources/
       webapp/
         WEB-INF/
-          - web.xml</code></pre>
+          - web.xml
+```
 
 * Material de referência utilizado para configurar o **maven-war-plugin**
 
@@ -50,7 +52,7 @@ Utilizado neste projeto
 
   * [Maven War Plugin - Adding and Filtering External Web Resources](https://maven.apache.org/plugins/maven-war-plugin/examples/adding-filtering-webresources.html)
 
----
+--
 
 * Ambiente de desenvolvimento
   * [Java](http://www.java.com/) 1.6+
@@ -64,8 +66,9 @@ Quanto as versões das dependências Java:
   Verificar o arquivo pom.xml
   
 
-Montando o ambiente local para uso desse projeto
-------------------------------------------------
+## Montando o ambiente local para uso desse projeto
+
+### Dependência - Layr Framework
 
 Antes de tudo, vai uma nota, o Layr Framework não está disponível no Maven Repository, caso seja a primeira vez que irá utilizar o framework deverá executar o respectivo procedimento.
 
@@ -75,10 +78,13 @@ Antes de tudo, vai uma nota, o Layr Framework não está disponível no Maven Re
 
 exemplo:
 
-    git clone git://github.com/miere/Layr.git
-    cd Layr/layr-parent
-    mvn clean install
+```
+git clone git://github.com/miere/Layr.git
+cd Layr/layr-parent
+mvn clean install
+```
 
+### Importando este projeto para o Eclipse IDE
 
 Tendo o Layr Framework no seu computador, realize o respectivos passos a seguir:
 
