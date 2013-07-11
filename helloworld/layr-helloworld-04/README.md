@@ -99,4 +99,4 @@ Tendo o Layr Framework no seu computador, realize o respectivos passos a seguir:
   
 3. Caso queira gerar o .war do projeto utilize o comando, no diretório da aplicação, ou através do plugin Maven no Eclipse
 
-      mvn clean install
+`mvn clean install`

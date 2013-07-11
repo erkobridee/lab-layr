@@ -2,16 +2,16 @@
 
 Criando um Hello World um pouco mais incrementado, mais próximo da estrutura de código do projeto que foi utilizado como modelo de estrutura para este projeto.
 
-Este projeto foi baseado no item: [Definindo a raíz do aplicativo](https://github.com/miere/Layr/blob/5f081b3dd512aba70b005715f56584fed4a81a1c/README.md#definindo-a-raz-do-aplicativo) do [README.md](https://github.com/miere/Layr/blob/5f081b3dd512aba70b005715f56584fed4a81a1c/README.md) do [Layr 2.0](https://github.com/miere/Layr/tree/5f081b3dd512aba70b005715f56584fed4a81a1c)
+Este projeto utiliza o [Layr 3.0](https://github.com/miere/Layr/tree/v3.0).
 
-Onde conforme a convesão utilizada no Layr, este procura uma classe anotada com `@WebResource("/home/")` para utilizar como página inicial da aplicação. Neste projeto foi utilizado também o conceito de tema de página.
+Onde conforme a convesão utilizada no Layr, este procura uma classe anotada com `@WebResource("home")` para utilizar como página inicial da aplicação. Neste projeto foi utilizado também o conceito de tema de página.
 
 
 ## Utilizado neste projeto
 
 * Estrutura modelo
 
-  [Layr / layr-jee-natural-routing-sample](https://github.com/miere/Layr/tree/5f081b3dd512aba70b005715f56584fed4a81a1c/layr-jee-natural-routing-sample)
+  [Layr / samples / layr-jee-sample](https://github.com/miere/Layr/tree/v3.0/samples/layr-jee-sample)
 
   **Obs.:** A estrutura desse projeto utiliza conceitos de Clean Code e Behavior Driven Development.
 

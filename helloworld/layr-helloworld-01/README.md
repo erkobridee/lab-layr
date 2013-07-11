@@ -2,7 +2,7 @@
 
 Como tudo que é novo e vou utilizar pela primeira vez, vamos ao clássico Hello World, ultra simples, para ver este framework funcionando no Web Browser.
 
-Este projeto foi baseado no item: [Definindo a raíz do aplicativo](https://github.com/miere/Layr/blob/5f081b3dd512aba70b005715f56584fed4a81a1c/README.md#definindo-a-raz-do-aplicativo) do [README.md](https://github.com/miere/Layr/blob/5f081b3dd512aba70b005715f56584fed4a81a1c/README.md) do [Layr 2.0](https://github.com/miere/Layr/tree/5f081b3dd512aba70b005715f56584fed4a81a1c)
+Este projeto utiliza o [Layr 3.0](https://github.com/miere/Layr/tree/v3.0).
 
 Onde conforme a convesão utilizada no Layr, este procura o `home.xhtml` para utilizar como página inicial da aplicação.
 
@@ -11,7 +11,7 @@ Onde conforme a convesão utilizada no Layr, este procura o `home.xhtml` para ut
 
 * Estrutura modelo
 
-	[Layr / layr-jee-natural-routing-sample](https://github.com/miere/Layr/tree/5f081b3dd512aba70b005715f56584fed4a81a1c/layr-jee-natural-routing-sample)
+	[Layr / samples / layr-jee-sample](https://github.com/miere/Layr/tree/v3.0/samples/layr-jee-sample)
 
   **Obs.:** A estrutura desse projeto utiliza conceitos de Clean Code e Behavior Driven Development.
 
