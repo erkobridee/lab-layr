@@ -19,12 +19,15 @@
 		<java.version>1.6</java.version>
 
 		<javax.javaee-api.version>6.0</javax.javaee-api.version>
-		<layr.version>2.0</layr.version>
+		<layr.version>3.0</layr.version>
+
+		<lombok.version>0.11.8</lombok.version>
 
 		<junit.version>4.10</junit.version>
 	</properties>	
 
 	<dependencies>
+
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -35,15 +38,23 @@
 		<!-- @begin: Layr -->
 		<dependency>
 			<groupId>org.layr</groupId>
-			<artifactId>layr-jee-natural-routing-plugin</artifactId>
+			<artifactId>layr-servlet</artifactId>
 			<version>${layr.version}</version>
 		</dependency>
+		
 		<dependency>
-			<groupId>org.layr</groupId>
-			<artifactId>layr-jee-business-routing-plugin</artifactId>
-			<version>${layr.version}</version>
+		    <groupId>org.layr</groupId>
+		    <artifactId>layr-ejb-support</artifactId>
+		    <version>${layr.version}</version>
 		</dependency>
 		<!-- @end: Layr -->
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>

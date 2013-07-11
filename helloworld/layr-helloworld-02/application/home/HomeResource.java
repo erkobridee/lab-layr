@@ -1,25 +1,36 @@
 package home;
 
+import static layr.api.ResponseBuilder.template;
+
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
 
-import org.layr.jee.routing.business.Route;
-import org.layr.jee.routing.business.WebResource;
+import layr.api.GET;
+import layr.api.QueryParameter;
+import layr.api.Response;
+import layr.api.WebResource;
 
-@WebResource("/home/")
+
+@WebResource("home")
+@Stateless
 public class HomeResource {
 
 	@EJB ProfileMeasurer profileMeasurer;
-	
-	String templateName;
-	
-	@Route(
-		pattern="/",
-		template="#{templateName}"
-	)
-	public void chooseARandomHomeScreen() {
-		templateName = ( profileMeasurer.measurer() == 0 )
-				? "home/default.xhtml"
-				: "home/alternative.xhtml";
-	}
+
+	@GET
+	public Response chooseARandomHomeScreen(
+		@QueryParameter("userName") String userName
+	) {
+				
+		String templateName = ( profileMeasurer.measurer() == 0 )
+							? "home/default.xhtml"
+							: "home/alternative.xhtml";
+
+		if ( userName == null )
+			userName = "Guest";
+
+		return template( templateName )  
+				.set("userName", userName);
+	}	
 	
 }
