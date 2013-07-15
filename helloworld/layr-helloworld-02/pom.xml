@@ -47,6 +47,12 @@
 		    <artifactId>layr-ejb-support</artifactId>
 		    <version>${layr.version}</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.layr</groupId>
+		    <artifactId>layr-jackson-converter</artifactId>
+		    <version>${layr.version}</version>
+		</dependency>
 		<!-- @end: Layr -->
 
 		<dependency>
