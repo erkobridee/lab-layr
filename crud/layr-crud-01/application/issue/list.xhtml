@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tpl:template
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:tpl="urn:layr:template"
+	xmlns:ui="urn:dependencies:components"
+	src="theme/layout.xhtml" >
+
+	<tpl:define name="title" id="title" value="Issues" />
+
+	<tpl:define name="body" id="body">
+
+	<div class="row">
+		á é í ó ú ç ~ ã õ ü <![CDATA[  |  ]]><a href="issue/new">add new Issue</a><![CDATA[  |]]>
+	</div>
+	
+	<div class="row">
+
+		<table id="#issuelist" class="table table-striped" style="width:100%;">
+			<thead>
+				<tr>
+					<th style="min-width: 50px;">id</th>
+					<th style="min-width: 200px;">Issue</th>
+					<th style="min-width: 100px;">Action</th>
+				</tr>
+			</thead>
+			<tbody id="issueListContent">
+			
+				<tpl:foreach
+					xmlns:tpl="urn:layr:template"
+					var="issue" values="#{issues}">
+					<tr data-id="#{issue.id}">
+						<td>#{issue.id}</td>
+						<td>#{issue.value}</td>
+						<td> 
+							<a href="issue/#{issue.id}/remove">remove</a><![CDATA[  |  ]]>  
+							<a href="issue/#{issue.id}/edit">edit</a>
+						</td>
+					</tr>
+				</tpl:foreach>			
+			
+			</tbody>		
+		</table>		
+
+	</div>		
+
+	</tpl:define>
+	
+	<tpl:define name="scripts" id="scripts">
+		<!-- TODO: add scripts -->
+	</tpl:define>
+	
+</tpl:template>

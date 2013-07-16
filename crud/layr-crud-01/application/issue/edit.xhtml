@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tpl:template
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:tpl="urn:layr:template"
+	xmlns:ui="urn:dependencies:components"
+	src="theme/layout.xhtml" >
+
+	<tpl:define name="title" id="title" value="Edit Issue" />
+
+	<tpl:define name="body" id="body">
+
+	<div class="row">
+
+	<form name="issueForm" action="#{postURL}" method="POST">
+	
+		<h1>Issue Form</h1>
+	
+		<input type="hidden" name="id" value="#{issue.id}" />
+	
+		<ui:FormItem label="Issue:">
+			<input type="text" name="value" value="#{issue.value}"/>
+		</ui:FormItem>
+	
+		<ui:FormItem>
+			<!-- <a href="javascript:void(0);" onclick="document.issueForm.submit();">#{submitLabel}</a>-->
+			<a href="javascript:submitIssueFormBtn();">#{submitLabel}</a>
+			<![CDATA[  |  ]]>
+			<a href="issue">Cancel</a>
+		</ui:FormItem>
+		
+	</form>
+
+	</div>		
+
+	</tpl:define>
+	
+	<tpl:define name="scripts" id="scripts">
+		<script type="text/javascript">
+			function submitIssueFormBtn() {
+				document.issueForm.submit();
+				return;
+			}
+		</script>
+	</tpl:define>
+	
+</tpl:template>

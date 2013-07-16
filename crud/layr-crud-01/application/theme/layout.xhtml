@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:tpl="urn:layr:template" lang="pt-br">
+	
+	<head>
+		<title>Layr - CRUD <tpl:var name="title" /></title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=100" />
+		
+		<!-- CSS -->
+    	<link rel="stylesheet" type="text/css" href="dependencies/bootstrap/css/bootstrap.min.css"></link>		
+		<link rel="stylesheet" type="text/css" href="dependencies/theme.css"></link>
+	</head>
+
+	<body>
+
+		<div id="wrap">
+            <div class="container body-content">
+				
+				<tpl:var name="body" />
+
+			</div>
+		</div>
+		
+		<!-- JS -->		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js" ></script>-->
+		<script src="dependencies/jquery/jquery.1.10.2.js" ></script>
+		<script src="dependencies/bootstrap/js/bootstrap.min.js" ></script>
+		<script src="dependencies/commons.js" ></script>
+		
+		<tpl:var name="scripts" />
+		
+	</body>
+
+</html>
