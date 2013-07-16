@@ -13,8 +13,8 @@ import layr.api.QueryParameters;
 import layr.api.Response;
 import layr.api.WebResource;
 
-@WebResource("issue")
 @Stateless
+@WebResource("issue")
 public class IssueResource {
 
 	@EJB private IssuePersistence persistence;

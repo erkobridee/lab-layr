@@ -14,8 +14,20 @@ public class IssuePersistence {
 	
 	public IssuePersistence() {
 		issues = new HashMap<Integer, IssueModel>();
+		this.init();
 	}
 
+	
+	private void init() {
+		IssueModel issue;
+		for(int i = 0; i < 10; i++) {
+			issue = new IssueModel();
+			issue.setValue("Issue " + (i+1));
+			this.insert(issue);
+		}
+		issue = null;
+	}
+	
 	
 	public IssueModel getById(Integer id) {
 		return issues.get(id);
