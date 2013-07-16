@@ -16,10 +16,19 @@ Onde conforme a convesão utilizada no Layr, este procura uma classe anotada com
   **Obs.:** A estrutura desse projeto utiliza conceitos de Clean Code e Behavior Driven Development.
 
 * Ambiente de desenvolvimento
+
   * [Java](http://www.java.com/) 1.6+
+
+  * [Lombok](http://projectlombok.org/) 0.11.8
+
+  	* [Reducing Boilerplate Code with Project Lombok](http://jnb.ociweb.com/jnb/jnbJan2010.html) 
+
   * [Maven](http://maven.apache.org/) 3
+
   * [Eclipse](http://eclipse.org/) Juno JEE (32 bits)
+
     * [JBoss Tools](https://www.jboss.org/tools), instalado via [Eclipse Marketplace](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=420896) | **Atenção:** o plugin não funciona corretamente no Eclipse 64 [ref](https://community.jboss.org/wiki/JBosstoolsVisualEditorFAQ).
+    
   * [JBoss 7+ AS](https://www.jboss.org/jbossas/downloads/)
   
 Quanto as versões das dependências Java:
