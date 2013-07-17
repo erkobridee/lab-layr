@@ -35,10 +35,11 @@ public class TestPersistence {
 		return testValues.get(id);
 	}
 	
-	public void insert(TestModel value) {
+	public TestModel insert(TestModel value) {
 		Integer key = testValues.size();
 		value.setId(key);
 		testValues.put(key, value);
+		return value;
 	}
 	
 	public void update(Integer id, TestModel value) {
