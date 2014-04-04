@@ -2,7 +2,7 @@
 
 ## O que é?
 
-O [Layr](https://github.com/miere/Layr) é uma ferramenta open-source com foco em Logic-free Markup, modularização e componentização, cujo o intuito é encurtar o tempo de desenvolvimento e manutenção de aplicações Web (Java EE).
+O [Layr](https://github.com/TeXOLabs/Layr) é uma ferramenta open-source com foco em Logic-free Markup, modularização e componentização, cujo o intuito é encurtar o tempo de desenvolvimento e manutenção de aplicações Web (Java EE).
 
 ## Quem usa?
 
